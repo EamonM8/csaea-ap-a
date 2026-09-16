@@ -200,6 +200,7 @@ public class CrashCourse {     // class header
 
             }
             System.out.println();
+            System.out.println(a + " is healthy as it only contains " + b + " calories.");
          }
     }
 }
