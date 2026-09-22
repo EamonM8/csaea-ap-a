@@ -1,4 +1,4 @@
-package CrashCourse;
+// package CrashCourse;
 
 public class CandyBar {
     private String candyName;
@@ -19,17 +19,18 @@ public class CandyBar {
 
     public void discount() {
         price *= 0.9;
+        System.out.println("The Price: " + price);
     }
-    public void checkHealtiness(int calories) {
+    public void checkHealthiness(int calories) {
         if (calories < 100){
             System.out.println(candyName + " is healthy as it only contains " + calories + " calories."); 
         }
         else {
-            System.out.println(candyName + " is Unhealthy because it contains " + calories + " calories.");
+            System.out.println(candyName + " is unhealthy because it contains " + calories + " calories.");
         }
     }
     public void nutFree(boolean containsNuts) {
-        if (containsNuts == true) {
+        if (containsNuts == false) {
             System.out.println("This candy bar contains nuts!!");
         }
         else {
