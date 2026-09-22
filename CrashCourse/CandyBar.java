@@ -2,7 +2,7 @@
 
 public class CandyBar {
     private String candyName;
-    private int calories;
+    public int calories;
     private double price;
     private boolean containsNuts;
 
