@@ -17,6 +17,16 @@ public class BoardGames {
         type = "regular";
         isBestseller = true;
     }
+
+    public String getName(){
+        System.out.println(gameName);
+        return gameName;
+    }
+    public String setName(String newName) {
+        gameName = newName;
+        return newName;
+    }
+    
     public void isPopular(boolean isBestseller) {
         if (isBestseller == true) {
             System.out.println("This is a popular game!");
@@ -55,6 +65,7 @@ public class BoardGames {
         } else {
             System.out.println("This is not a good party game...");
         }
+
     }
 
     }

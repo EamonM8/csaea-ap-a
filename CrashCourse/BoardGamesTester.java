@@ -7,6 +7,14 @@ public class BoardGamesTester {
         BoardGames gofish = new BoardGames("gofish","card",false);
         BoardGames chess = new BoardGames("chess","regular",true);
 
+        gofish.getName();
+        chess.setName("sum bs");
+        chess.getName();
+
+        String gameName = gofish.getName();
+        System.out.println("From Tester Class: "+ gameName);
+        System.out.println("Good boy, "+ gameName.toUpperCase());
+
         monopoly.isPopular(true);
         applestoapples.length(15);
         sorry.overview();
