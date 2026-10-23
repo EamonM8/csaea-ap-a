@@ -28,7 +28,21 @@ public class Song {
     }
     public String toString() 
     {
-        
-        return title + " by " + artist + " - " + plays + "plays";
+        if (plays == 1) {
+            return title + " by " + artist + " - " + plays + "play";
+        }
+        else {
+            return title + " by " + artist + " - " + plays + "plays";
+        }
     }
+    public String getStars() {
+        String totalStars = "";
+        for (int i = 0; i == plays;) {
+            totalStars += "*";
+        }
+        return totalStars;
+    }
+
+    // "1 plays" is wrong. Fix toString() so it reutnrs "1 play" for one play and plays for everything else. Tool: if/else
+        // Create a new method called getStars() Return one * for each play. 
 }
