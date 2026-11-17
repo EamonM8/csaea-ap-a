@@ -72,5 +72,27 @@ public class NativeArrays {
             }
             System.out.println(" Index "+ i + "-> value " + nums[i]);
         }
+        // Challenge: Curve the Scores
+         int[] scores2 = {85, 62, 97, 45, 70, 99};
+        // Add 5 to every score, but no score can go above 100. 
+        for (int i = 0; i < scores2.length; i++) {
+            if ((scores2[i] += 5) >= 100) {
+                scores2[i] = 100;
+            } else {
+                scores2[i] = (scores2[i] +=5);
+            }
+            System.out.println("Scores: " + scores2[i]);
+        }
+        // Challenge: Random Fill
+        int[] numbers = new int[10];
+        // Loop 10 times. Each time, use Math.random() to get a random number from 1 to 100 and a random index from 0 to 9, then put the number at that index. Print the array. 
+        // Then answer: why are some spots still 0?
+        for (int i = 0; i < 10; i++) {
+            int val = (int) (Math.random() * 101);
+            int index = (int) (Math.random() * 9);
+            numbers[index] = val;
+            System.out.println(numbers[i]);
+        }
+        // some are still zero because there is no guarentee that each index gets hit by the program.
 }
 }
