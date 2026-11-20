@@ -9,5 +9,9 @@ public static void main(String[] args) {
         ArrayLists.showIndex(animals);
         
         ArrayLists.findIndex(animals, "blobfish");
+
+        ArrayLists.modifyAnimals(animals);
+
+        ArrayLists.numberUtilities();
     }
 }
